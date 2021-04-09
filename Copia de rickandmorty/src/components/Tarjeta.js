@@ -31,7 +31,13 @@ class Tarjeta extends Component {
                 <h2>  {this.props.tarjetaData.name} </h2>
                 <p> Estatus: {this.props.tarjetaData.status} </p>
                 <p> Especie: {this.props.tarjetaData.species} </p>
-                 <p> Origen: {this.props.tarjetaData.origin.name} </p> 
+                <p> Origen: {this.props.tarjetaData.origin.name} </p> 
+                <button className="btnColor" 
+                onClick = {this.CambiarColor.bind(this, 'grey')}
+                > Cambiar color</button>
+                <button className="btnEliminar" 
+                onClick = {this.CambiarColor.bind(this, 'grey')}
+                > Eliminar tarjeta </button>
             </div>
         )    
     }
