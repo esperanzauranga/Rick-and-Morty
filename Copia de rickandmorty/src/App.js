@@ -13,15 +13,18 @@ function App() {
       </header>
         
       <div className='contenedor'>
-        {listaTarjetas.map(function (tarjeta, idx) {
-          return (
-          <div>
-              <Tarjeta tarjetaData={tarjeta} key={idx}/>
-           </div>
-          )
-        })
-      }
-    </div>
+        <div className = 'lista'>
+          {listaTarjetas.map(function (tarjeta, idx) {
+              return (
+            
+                <Tarjeta tarjetaData={tarjeta} key={idx} />
+            
+              )
+            })
+          }
+        </div>
+      </div>
+  
 
       <footer>
         Desarrolladores: Esperanza Uranga, Francesca Porro Toyos, Segundo Ustariz
